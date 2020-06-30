@@ -7,7 +7,7 @@ from watchdog.events import RegexMatchingEventHandler
 
 
 class ImageEventHandler(RegexMatchingEventHandler):
-    IMAGE_REGEX = [r".*(\d{6})(-(color|depth))(_grayscale)\.png$"]
+    IMAGE_REGEX = [r".*(-grayscale)\.png$"]
 
     def __init__(self):
         super().__init__(self.IMAGE_REGEX)
