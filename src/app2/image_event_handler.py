@@ -13,7 +13,7 @@ class ImageEventHandler(RegexMatchingEventHandler):
         super().__init__(self.IMAGE_REGEX)
 
     def on_created(self, event):
-        print(f"On created {event.src_path}")
+        print(f"Processing {event.src_path}")
         file_size = -1
         while file_size != os.path.getsize(event.src_path):
             file_size = os.path.getsize(event.src_path)
