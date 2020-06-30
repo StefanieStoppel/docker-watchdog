@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t docker-watchdog-2:latest
+docker build -f ./docker/container2/Dockerfile -t docker-watchdog-2:latest .
