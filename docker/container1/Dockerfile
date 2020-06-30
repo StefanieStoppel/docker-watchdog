@@ -10,4 +10,4 @@ RUN pip install -r requirements.txt
 
 COPY ./src ./src
 
-CMD /bin/bash
+CMD ["python", "-m", "src.app1.image_watcher"]
